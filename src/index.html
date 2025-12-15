@@ -8,8 +8,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-  <script src="{{ '/js/gallery.js' | url }}"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/gallery.js"></script>
 </head>
 <body>
   <header>
@@ -36,13 +36,13 @@
           <div class="show-row-scroll">
             {% for image in show.images %}
             <div class="gallery-item">
-              <img src="{{ '/images/' | append: image.filename | url }}" alt="{{ image.alt }}" loading="lazy">
+              <img src="images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
             </div>
             {% endfor %}
             <!-- Duplicate images for seamless loop -->
             {% for image in show.images %}
             <div class="gallery-item">
-              <img src="{{ '/images/' | append: image.filename | url }}" alt="{{ image.alt }}" loading="lazy">
+              <img src="images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
             </div>
             {% endfor %}
             <!-- Third set added via JavaScript -->
@@ -57,7 +57,7 @@
       <h2>Bio</h2>
       <div class="bio-wrapper">
         <div class="bio-headshot">
-          <img src="{{ '/images/headshot.webp' | url }}" alt="{{ site.name }}">
+          <img src="images/headshot.webp" alt="{{ site.name }}">
         </div>
         <div class="bio-content">
           {% assign paragraphs = site.bio | split: "\n" %}
