@@ -1,0 +1,385 @@
+:root {
+  --bg-dark: #0a0a0a;
+  --bg-section: #1a1a1a;
+  --text-primary: #f0f0f0;
+  --text-secondary: #b0b0b0;
+  --accent: #4a9eff;
+  --border: #333;
+  --content-width: 65rem; /* Optimal content width for readability */
+  --paragraph-width: 40rem; /* Optimal paragraph line length */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Header / Navigation */
+header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  z-index: 1000;
+  padding: 1.5rem 2rem;
+}
+
+nav {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.01em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 1.05rem;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Main Content */
+main {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+section {
+  padding: 6rem 0;
+  min-height: 50vh;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+  max-width: var(--content-width);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Gallery Section */
+#gallery {
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#gallery h2 {
+  padding: 2rem 0 1rem;
+  margin: 0 auto;
+  max-width: var(--content-width);
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.gallery-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+}
+
+.show-row {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  line-height: 0;
+}
+
+.show-row-scroll {
+  display: flex;
+  gap: 0;
+  height: 100%;
+  will-change: transform;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+.gallery-item img {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.show-row-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  z-index: 10;
+}
+
+.show-row-caption .production {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  align-self: flex-start;
+}
+
+.show-row-caption .credit {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  align-self: flex-end;
+}
+
+/* Bio Section */
+#bio {
+  background-color: var(--bg-section);
+  margin: 6rem -2rem;
+  padding: 6rem 2rem 8rem;
+  min-height: 0;
+}
+
+#bio h2 {
+  margin-bottom: 4rem;
+}
+
+#bio .bio-wrapper {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  #bio .bio-wrapper {
+    flex-direction: row;
+    gap: 5rem;
+    align-items: flex-start;
+  }
+}
+
+#bio .bio-headshot {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: var(--bg-dark);
+}
+
+@media (min-width: 768px) {
+  #bio .bio-headshot {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+#bio .bio-headshot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#bio .bio-content {
+  flex: 1;
+  max-width: var(--paragraph-width);
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+#bio .bio-content p {
+  margin-bottom: 1.5rem;
+}
+
+#bio .bio-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* CV Section */
+#cv {
+  max-width: 50rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cv-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.cv-table thead th {
+  text-align: left;
+  padding: 1rem 0.75rem;
+  border-bottom: 2px solid var(--border);
+  font-weight: 500;
+  color: var(--text-primary);
+  font-family: 'Source Sans 3', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.cv-table tbody tr {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+.cv-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.cv-table td {
+  padding: 1rem 0.75rem;
+  color: var(--text-secondary);
+}
+
+.cv-table td.year {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.cv-table td.production {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    padding: 1.25rem 1.5rem;
+  }
+  
+  .logo {
+    font-size: 1.25rem;
+  }
+  
+  .nav-links {
+    gap: 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  #gallery h2 {
+    padding: 2rem 0 1rem;
+    padding-left: 1rem;
+  }
+  
+  .gallery-container {
+    padding: 1rem 0;
+  }
+  
+  .show-row {
+    height: 300px;
+  }
+  #gallery h2 {
+    padding: 2rem 1rem 1rem;
+  }
+  
+  .gallery-grid {
+    padding: 0 1rem 2rem;
+    gap: 0.75rem;
+  }
+  
+  .cv-table {
+    font-size: 0.9rem;
+  }
+  
+  .cv-table th,
+  .cv-table td {
+    padding: 0.75rem 0.5rem;
+  }
+}
+  
+  main {
+    padding: 0 1rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  #bio {
+    margin: 2rem -1rem;
+    padding: 2rem 1rem;
+  }
+  
+  .cv-table {
+    font-size: 0.9rem;
+  }
+  
+  .cv-table th,
+  .cv-table td {
+    padding: 0.75rem 0.5rem;
+  }
+
+@media (max-width: 600px) {
+  .cv-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}

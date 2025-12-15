@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.name }} - {{ site.title }}</title>
+  <meta name="description" content="{{ site.bio | truncate: 150 }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">{{ site.name }}</div>
+      <ul class="nav-links">
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#cv">CV</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gallery Section -->
+    <section id="gallery">
+      <div class="gallery-container">
+        {% for show in shows %}
+        <div class="show-row">
+          <div class="show-row-caption">
+            <div class="production">{{ show.name }} ({{ show.year }}) · {{ show.designType }}</div>
+            <div class="credit">Photo by {{ show.photographer }}</div>
+          </div>
+          <div class="show-row-scroll">
+            {% for image in show.images %}
+            <div class="gallery-item">
+              <img src="/images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
+            </div>
+            {% endfor %}
+            <!-- Duplicate images for seamless loop -->
+            {% for image in show.images %}
+            <div class="gallery-item">
+              <img src="/images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
+            </div>
+            {% endfor %}
+            <!-- Third set added via JavaScript -->
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <!-- Bio Section -->
+    <section id="bio">
+      <h2>Bio</h2>
+      <div class="bio-wrapper">
+        <div class="bio-headshot">
+          <img src="/images/headshot.webp" alt="{{ site.name }}">
+        </div>
+        <div class="bio-content">
+          {% assign paragraphs = site.bio | split: "\n" %}
+          {% for paragraph in paragraphs %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Section -->
+    <section id="cv">
+      <h2>CV</h2>
+      <table class="cv-table">
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Production</th>
+            <th>Company</th>
+            <th>Role</th>
+            <th>Director</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in cv %}
+          <tr>
+            <td class="year">{{ item.year }}</td>
+            <td class="production">{{ item.production }}</td>
+            <td>{{ item.venue }}</td>
+            <td>{{ item.role }}</td>
+            <td>{{ item.director }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

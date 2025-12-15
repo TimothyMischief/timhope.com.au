@@ -1,0 +1,15 @@
+{
+  "name": "timhope-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for lighting and video design",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
