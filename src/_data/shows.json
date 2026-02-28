@@ -1,5 +1,133 @@
 [
   {
+    "name": "Night Garden",
+    "year": "2025",
+    "photographer": "Charlie Hardy",
+    "designType": "Lighting Design",
+    "images": [
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00001.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00002.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00003.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00004.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00005.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00006.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00007.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00008.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00009.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00010.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00011.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00012.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00013.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00014.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00015.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00016.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00017.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00018.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00019.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00020.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00021.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00022.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00023.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00024.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00025.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00026.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00027.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00028.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00029.webp",
+        "alt": "Night Garden - Lighting Design"
+      },
+      {
+        "filename": "night-garden-2025-chalie-hardy/night-garden-2025-charlie-hardy-00030.webp",
+        "alt": "Night Garden - Lighting Design"
+      }
+    ]
+  },
+  {
     "name": "Flora The Red Menace",
     "year": "2025",
     "photographer": "Grant Leslie",
@@ -395,6 +523,111 @@
       },
       {
         "filename": "the-eternal-quest-to-make-yourself-happy-or-die-trying-2024-eddy-summers/the-eternal-quest-to-make-yourself-happy-or-die-trying-2024-eddy-summers-13.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      }
+    ]
+  },
+
+  {
+    "name": "The Hello Girls",
+    "year": "2024",
+    "photographer": "Phil Erbacher",
+    "designType": "Lighting Design",
+    "images": [
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00001.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00002.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00003.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00004.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00005.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00006.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00007.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00008.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00009.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00010.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00011.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00012.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00013.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00014.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00015.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00016.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00017.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00018.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00019.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00020.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00021.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00022.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00023.webp",
+        "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
+      },
+      {
+        "filename": "the-hello-girls-2024-phillip-erbacher/the-hello-girls-2024-phillip-erbacher-00024.webp",
         "alt": "The Eternal Quest To Make Yourself Happy Or Die Trying - Lighting and video design"
       }
     ]
