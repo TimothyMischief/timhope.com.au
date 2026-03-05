@@ -137,6 +137,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     ensureStarted();
 
+    row.addEventListener("pointercancel", () => console.log("pointercancel", index));
+
     row.addEventListener("mouseenter", () => {
       targetRate = 0;
       requestTick();
