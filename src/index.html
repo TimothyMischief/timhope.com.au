@@ -36,16 +36,9 @@
           <div class="show-row-scroll">
             {% for image in show.images %}
             <div class="gallery-item">
-              <img src="images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
+              <img src="images/{{ image.filename }}" alt="{{ image.alt }}" loading="eager" draggable="false">
             </div>
             {% endfor %}
-            <!-- Duplicate images for seamless loop -->
-            {% for image in show.images %}
-            <div class="gallery-item">
-              <img src="images/{{ image.filename }}" alt="{{ image.alt }}" loading="lazy">
-            </div>
-            {% endfor %}
-            <!-- Third set added via JavaScript -->
           </div>
         </div>
         {% endfor %}
