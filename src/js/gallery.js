@@ -156,6 +156,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!anim) return;
       if (e.button !== undefined && e.button !== 0) return;
 
+      e.preventDefault();
+
       dragging = true;
       pointerId = e.pointerId;
       row.setPointerCapture(pointerId);
@@ -165,23 +167,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       targetRate = 0;
       requestTick();
-    });
+    }, { passive: false });
 
     row.addEventListener("pointermove", (e) => {
       if (!anim) return;
       if (!dragging || e.pointerId !== pointerId) return;
 
+      e.preventDefault();
+
       const dx = (e.clientX - lastX) * DRAG_SENS;
       lastX = e.clientX;
 
-      // Map pixel movement to timeline movement based on the actual transform delta.
-      // This stays correct regardless of direction because deltaX is +/- setWidth.
       const dt = (dx / deltaX) * duration;
-
       const t = wrapTime(lastTime + dt, duration);
+
       anim.currentTime = t;
       lastTime = t;
-    });
+    }, { passive: false });
 
     function endDrag(e) {
       if (!anim) return;

@@ -383,3 +383,15 @@ section h2 {
     white-space: nowrap;
   }
 }
+
+/* stop browser selection/drag gestures hijacking the interaction */
+.show-row-scroll,
+.show-row-scroll * {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.show-row-scroll {
+  touch-action: none; /* JS owns the gesture */
+}
